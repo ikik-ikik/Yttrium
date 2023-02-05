@@ -1,7 +1,7 @@
 /* Section Hero */
 .hero {
   height: 100vh;
-  background: url('../Picture/backound_provi.jpg');
+  background: url("https://github.com/ikik-ikik/Yttrium/blob/prod/Picture/backound_provi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
