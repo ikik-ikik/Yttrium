@@ -1,0 +1,8 @@
+/* Section Hero */
+.hero {
+    height: 100vh;
+    background: url('/Picture/backround_reseau.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
