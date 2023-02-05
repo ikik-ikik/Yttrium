@@ -1,7 +1,7 @@
 /* Section Hero */
 .hero {
     height: 100vh;
-    background: url('../backgroud_concert.jpg');
+    background: url('../Picture/backgroud_concert.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
