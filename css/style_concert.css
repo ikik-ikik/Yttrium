@@ -1,3 +1,21 @@
+/*couleur a utiliser
+1) #000407 (black)
+2) #79031d (red)
+3) #edb518 (yellow)
+4) #f5f7f7 (white)
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+
+
 /* Section Hero */
 .hero {
     height: 100vh;
