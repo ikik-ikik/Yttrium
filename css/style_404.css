@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  .page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .page_404 .four_zero_four_bg {
+    background: url("../Picture/bg.gif");
+    height: 400px;
+    background-position: center;
+    width: 100%;
+  }
+  
+  .page_404 .text-center {
+    font-size: 10vw;
+    margin-bottom: 1rem;
+  }
+  
+  .page_404 .h2 {
+    font-size: 8vw;
+  }
+  
+  .page_404 .bouton {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: #79031d;
+    display: inline-block;
+    border-radius: 25px;
+    margin-top: 2rem;
+    
+  }
+  
+  .page_404 .content_box_404 {
+    margin-top: -50px;
+  }
+  
+  @media (min-width: 768px) {
+    .page_404 .text-center {
+      font-size: 80px;
+    }
+  
+    .page_404 .h2 {
+      font-size: 64px;
+    }
+  
+    .page_404 .bouton {
+      padding: 0.75rem 1.5rem;
+      
+      margin-top: 3rem;
+    }
+  }
