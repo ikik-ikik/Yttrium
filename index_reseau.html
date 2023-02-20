@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yttrium</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="stylesheet" type="text/css" href="css\style_reseau.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Picture\favicon_off.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+   <!-- création de l'entête-->
+    <header>
+        <nav class="navbar">
+            <!-- Navbar brand -->
+            <div class="brand"><a href="index.html">
+                <img src="Picture/logo_detour_recadre.png" alt="Logo"></a>
+            </div>
+
+            <div class="toggle">
+                <i class="fa-solid fa-bars ouvrir"></i>
+                <i class="fa-solid fa-xmark fermer"></i>
+            </div>
+
+            <!-- Navbar links -->
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index_concert.html">Concert</a></li>
+                <li><a class="active" href="#">Réseau</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+
+    </section>
+    <script src="main.js"></script>
+  <!--création balise main-->
+  <main>
+    <!--création de la partie principale-->
+    <div class="wrapper social-buttons">
+      <div class="button twitter" onClick="window.open('https://twitter.com/Yttrium_Band','_blank');">
+         <div class="icon">
+            <i class="fab fa-twitter"></i>
+         </div>
+         <span>Twitter</span>
+      </div>
+      <div class="button insta" onClick="window.open('https://www.instagram.com/yttrium_band_officiel/','_blank');">
+         <div class="icon">
+            <i class="fab fa-instagram"></i>
+         </div>
+         <span>Instagram</span>
+      </div>
+      <div class="button tiktok" onClick="window.open('https://www.tiktok.com/@yttriumband','_blank');">
+         <div class="icon">
+            <i class="fa-brands fa-tiktok"></i>
+         </div>
+         <span>TikTok</span>
+      </div>
+      <div class="button youtube" onClick="window.open('https://www.youtube.com/channel/UCMhyU-_xbyTyL-x3fQL2vKA','_blank');">
+         <div class="icon">
+            <i class="fab fa-youtube"></i>
+         </div>
+         <span>YouTube</span>
+      </div>
+   </div>
+    <main>
+        <section class="hero">
+
+        </section>
+
+
+    </main>
+    <!--création du pied de page-->
+    <footer>
+              <!-- Formulaire de contact -->
+              <form id="contact-form" method="post" action="form.php">
+               <!-- Champ nom -->
+               <div>
+                 <label class="text_name" for="name">Nom :</label>
+                 <input type="text" id="name" name="name" required>
+               </div>
+       
+         <!-- Champ email -->
+               <div>
+                 <label class="text_email" for="email">Email :</label>
+                 <input type="email" id="email" name="email" required>
+               </div>
+       
+         <!-- Champ message -->
+               <div>
+                 <label class="text_mess" for="message">Message :</label>
+                 <textarea id="message" name="message" rows="5" required></textarea>
+               </div>
+       
+         <!-- Bouton Envoyer -->
+               <button type="submit">Envoyer</button>
+             </form>
+    </footer>
+</body>
+
+</html>
