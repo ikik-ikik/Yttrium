@@ -90,11 +90,40 @@ html,body{
 .wrapper .button:hover .icon i{
   color: #fff;
 }
-.wrapper .button span{
+.wrapper .twitter span{
   font-size: 40px;
   font-weight: 1000;
   line-height: 120px;
-  margin-left: 20px;
+  margin-left: 33px;
+  position: relative;
+  top: -3px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .insta span{
+  font-size: 40px;
+  font-weight: 1000;
+  line-height: 120px;
+  margin-left: 12px;
+  position: relative;
+  top: -3px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .tiktok span{
+  font-size: 40px;
+  font-weight: 1000;
+  line-height: 120px;
+  margin-left: 35px;
+  position: relative;
+  top: -3px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .youtube span{
+  font-size: 40px;
+  font-weight: 1000;
+  line-height: 120px;
+  margin-left: 24px;
   position: relative;
   top: -3px;
   transition: all 0.3s ease-out;
@@ -207,7 +236,7 @@ html,body{
     margin-left: -3px;
     transition: all 0.3s ease-out;
     position: relative;
-    top: -6px;
+    top: -5px;
   }
 
   .wrapper .tiktok span{
