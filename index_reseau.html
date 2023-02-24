@@ -38,7 +38,7 @@
     <section class="hero">
 
     </section>
-    <script src="main.js"></script>
+    
   <!--création balise main-->
   <main>
     <!--création de la partie principale-->
@@ -77,30 +77,33 @@
     </main>
     <!--création du pied de page-->
     <footer>
-              <!-- Formulaire de contact -->
-              <form id="contact-form" method="post" action="form.php">
-               <!-- Champ nom -->
-               <div>
-                 <label class="text_name" for="name">Nom :</label>
-                 <input type="text" id="name" name="name" required>
-               </div>
+      <a name="form"></a>
+      <form action="https://formsubmit.co/yttrium@yttrium-band.com" id="contact-form" method="POST" >
+         <h2 class="form-title">Formulaire de contact</h2>
+         <!-- Champ nom -->
+         <div>
+           <label class="text_name" for="name">Nom :</label>
+           <input type="text" id="name" name="name" required>
+         </div>
        
          <!-- Champ email -->
-               <div>
-                 <label class="text_email" for="email">Email :</label>
-                 <input type="email" id="email" name="email" required>
-               </div>
+         <div>
+           <label class="text_email" for="email">Email :</label>
+           <input type="email" id="email" name="email" required>
+         </div>
        
          <!-- Champ message -->
-               <div>
-                 <label class="text_mess" for="message">Message :</label>
-                 <textarea id="message" name="message" rows="5" required></textarea>
-               </div>
+         <div>
+            <label class="text_mess" for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
        
          <!-- Bouton Envoyer -->
-               <button type="submit">Envoyer</button>
-             </form>
+         <button type="submit">Envoyer</button>
+         <input type="hidden" name="_next" value="https://www.yttrium-band.com/thanks.html">
+       </form>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

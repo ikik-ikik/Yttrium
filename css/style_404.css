@@ -1,3 +1,10 @@
+/*couleur a utiliser
+1) #000407 (black)
+2) #79031d (red)
+3) #edb518 (yellow)
+4) #f5f7f7 (white)
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +14,21 @@
   
   html, body {
     height: 100%;
+  }
+  
+  /* scrollbar */
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track {
+  background-color: #e5e5e5;
+  }
+  body::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #79031d;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #edb518;
   }
   
   .page_404 {
