@@ -1,0 +1,121 @@
+/*couleur a utiliser
+1) #000407 (black)
+2) #79031d (red)
+3) #edb518 (yellow)
+4) #f5f7f7 (white)
+*/
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* Section Hero */
+body {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1511140973288-19bf21d7e771?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  /* grow shrink basis */
+  flex: 1 0 auto;
+}
+
+
+
+footer{
+  flex-shrink: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: #edb518;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.contact-btn {
+  display: inline-block;
+  background-color: #79031d;
+  color: #f5f7f7;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  margin: 20px 0;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-color: #edb518;
+}
