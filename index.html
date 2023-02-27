@@ -2,19 +2,46 @@
 <html lang="fr">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X008LB5B0F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X008LB5B0F');
+</script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeunes passionnés par la musique à la recherche de nouveaux cobaye">
   <title>Yttrium</title>
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css\style_home.css">
   <link rel="shortcut icon" type="image/x-icon" href="Picture\favicon_off.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Boxicons CSS -->
+  <script src="cc.js" defer></script>
 
 </head>
 
 <body>
   <div class="content">
+    <div class="cc">
+      <header>
+        <i class="fa-sharp fa-solid fa-cookie-bite"></i>
+        <h2 class="text2">Consentement aux cookies !</h2>
+      </header>
+
+      <div class="data">
+        <p>Ce site Web utilise des cookies pour vous aider à avoir une expérience de navigation supérieure et plus pertinente.</p>
+      </div>
+
+      <div class="buttonsc">
+        <button class="buttonc" id="acceptBtn">Accepter</button>
+        <button class="buttonc" id="declineBtn">Décliner</button>
+      </div>
+    </div>
   <!--création balise header -->
   <header>
     <nav class="navbar">
@@ -30,9 +57,9 @@
 
       <!-- Navbar links -->
       <ul class="links">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="index_concert.html">Concert</a></li>
-        <li><a href="index_reseau.html">Réseau</a></li>
+        <li><a class="active thome" href="#">Home</a></li>
+        <li><a class="tconcert" href="index_concert.html">Concert</a></li>
+        <li><a class="treseau" href="index_reseau.html">Réseau</a></li>
       </ul>
     </nav>
     <form method="post" action="https://newsletter.infomaniak.com/external/submit" class="inf-form" target="_blank">
