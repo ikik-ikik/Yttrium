@@ -14,7 +14,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html{
+  background-color: #000407;
+}
+
+body{
+  overflow-x: hidden;
+}
+
 /* scrollbar */
+
+
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -27,6 +37,9 @@ background-color: #79031d;
 }
 body::-webkit-scrollbar-thumb:hover {
   background-color: #edb518;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 4, 7, 0.5);
 }
 
 
@@ -127,7 +140,7 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 7;
 }
 .cc.show {
-  right: 20px;
+  right: 0px;
 }
 .cc header {
   display: flex;
