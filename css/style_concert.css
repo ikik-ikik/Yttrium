@@ -234,6 +234,7 @@ main {
 .info span a{
   font-weight: bolder;
   text-decoration: none;
+  font-size: 17px;
 
   color: #79031d;
 }
