@@ -1,0 +1,27 @@
+/*couleur a utiliser
+1) #000407 (black)
+2) #79031d (red)
+3) #edb518 (yellow)
+4) #f5f7f7 (white)
+*/
+
+body{
+    background-color: #000407;
+}
+
+.text-4xl{
+    color: #f5f7f7;
+}
+
+.text_off{
+    color: #f5f7f7;
+}
+
+@keyframes apparition {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  .page{
+    animation: apparition 0.8s ease-out;
+  }
