@@ -21,6 +21,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="Picture\favicon_off.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Boxicons CSS -->
   <script src="cc.js" defer></script>
 </head>
@@ -69,7 +71,7 @@
   <!--création balise main-->
   <main>
     <!--création de la partie principale-->
-    <div class="wrapper social-buttons">
+    <div class="wrapper social-buttons" data-aos="fade-down" data-aos-duration="1000">
       <div class="button twitter" onClick="window.open('https://twitter.com/Yttrium_Band','_blank');">
          <div class="icon">
             <i class="fab fa-twitter"></i>
@@ -104,33 +106,41 @@
     </main>
     <!--création du pied de page-->
     <footer>
+      
       <a name="form"></a>
       <form action="https://formsubmit.co/yttrium@yttrium-band.com" id="contact-form" method="POST" >
-         <h2 class="form-title">Formulaire de contact</h2>
+         
+            <h2 class="form-title">Formulaire de contact</h2>
+         </div>
          <!-- Champ nom -->
-         <div>
+         <div data-aos="fade-up" data-aos-duration="1000">
            <label class="text_name" for="name">Nom :</label>
            <input type="text" id="name" name="name" required>
          </div>
        
          <!-- Champ email -->
-         <div>
+         <div data-aos="fade-up" data-aos-duration="1000">
            <label class="text_email" for="email">Email :</label>
            <input type="email" id="email" name="email" required>
          </div>
        
          <!-- Champ message -->
-         <div>
+         <div data-aos="fade-up" data-aos-duration="1000">
             <label class="text_mess" for="message">Message :</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea class="mess" id="message" name="message" rows="5" required></textarea>
           </div>
        
          <!-- Bouton Envoyer -->
-         <button type="submit">Envoyer</button>
+         
+            <button type="submit">Envoyer</button>
+         
          <input type="hidden" name="_next" value="https://www.yttrium-band.com/thanks.html">
        </form>
     </footer>
     <script src="main.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

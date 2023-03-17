@@ -34,6 +34,46 @@ body{
   flex: 1 0 auto;
 }
 
+#popup-button {
+  background-color: #79031d; /* couleur de fond */
+  color: white;
+  border-radius: 100px; /* couleur du texte */
+  border: none; /* pas de bordure */
+  padding: 12px 24px; /* espace intérieur */
+  text-align: center; /* alignement du texte */
+  text-decoration: none; /* pas de soulignement */
+  display: inline-block; /* afficher en ligne */
+  font-size: 16px; /* taille de police */
+  margin: 4px 2px; /* marges */
+  cursor: pointer; /* curseur de souris */
+  position: absolute; /* positionnement absolu */
+  top: 5px; /* positionné tout en haut de la page */
+  left: 50%; /* centré horizontalement */
+  transform: translateX(-50%); /* recentre le bouton */
+  z-index: 10000000; /* définit la profondeur de l'élément (au-dessus de tous les autres éléments) */
+}
+
+#popup-button:hover {
+  background-color: #edb518; /* couleur de fond */
+  color: white;
+  border-radius: 100px; /* couleur du texte */
+  transition: background-color 0.5s ease;
+  box-shadow: 0 0 20px rgba(237, 181, 24, 0.5); /* effet d'ombre portée renforcé */
+  border: none; /* pas de bordure */
+  padding: 12px 24px; /* espace intérieur */
+  text-align: center; /* alignement du texte */
+  text-decoration: none; /* pas de soulignement */
+  display: inline-block; /* afficher en ligne */
+  font-size: 16px; /* taille de police */
+  margin: 4px 2px; /* marges */
+  cursor: pointer; /* curseur de souris */
+  position: absolute; /* positionnement absolu */
+  top: 5px; /* positionné tout en haut de la page */
+  left: 50%; /* centré horizontalement */
+  transform: translateX(-50%); /* recentre le bouton */
+  z-index: 10000000; /* définit la profondeur de l'élément (au-dessus de tous les autres éléments) */
+}
+
 
 
 footer{
@@ -118,6 +158,8 @@ footer{
 
 .contact-btn:hover {
   background-color: #edb518;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 0 20px rgba(237, 181, 24, 0.5);
 }
 
 

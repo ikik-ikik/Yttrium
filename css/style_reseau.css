@@ -199,6 +199,25 @@ body{
   text-align: center;
   color: #f5f7f7;
 }
+.mess::-webkit-scrollbar {
+  width: 10px;
+}
+.mess::-webkit-scrollbar-track {
+background-color: #e5e5e5;
+}
+.mess::-webkit-scrollbar-thumb {
+border-radius: 15px;
+background-color: #79031d;
+}
+.mess::-webkit-scrollbar-thumb:hover {
+  background-color: #edb518;
+}
+.mess::-webkit-scrollbar-track {
+  background: transparent;
+}
+.mess{
+  resize: none;
+}
 @media all and (max-width: 826px) {
   .social-buttons {
     display: flex;
