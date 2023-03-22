@@ -193,6 +193,14 @@ body{
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #edb518;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 0 20px rgba(237, 181, 24, 0.5);
+  
 }
 
 .form-title {

@@ -63,6 +63,7 @@ body{
 }
 .container{
   padding: 10px 10%;
+  overflow-x: hidden;
 }
 
 
@@ -98,8 +99,16 @@ body{
   width: 100%;
   border-radius: 15px;
   margin-left: -25px;
+  transition: filter 0.3s ease-in-out;
   
 }
+
+.about-col-1 img:hover{
+  filter: drop-shadow(0 0 20px rgba(237, 181, 24, 0.5));
+  transition: filter 0.5s ease;
+  
+}
+
 .about-col-2{
   flex-basis: 60%;
 }
@@ -173,7 +182,7 @@ body{
 }
 .services-list div span{
   font-size: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 .guit{
   height: 7vh;
@@ -271,11 +280,13 @@ footer{
 }
 .socials a i{
   font-size: 1.1rem;
-  transition: color .4s ease;
+  transition: background-color 0.3s ease-in-out;
 
 }
-.socials a:hover i{
+.socials a i:hover{
   color: #edb518;
+  transition: color 0.5s ease;
+  text-shadow: 0 0 20px rgba(237, 181, 24, 0.5);
 }
 
 .footer-bottom{
@@ -341,8 +352,15 @@ footer{
   .sub-title{
       font-size: 40px;
   }
-  .about-col-1, .about-col-2{
-      flex-basis: 100%;
+  
+  .about-col-2{
+    max-width: 600rem; /* ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* centrer le paragraphe horizontalement */
+  }
+
+  .about-col-1{
+    flex-basis: 100%;
+    margin-left: 20px;
   }
   .about-col-1{
       margin-bottom: 30px;
@@ -354,15 +372,4 @@ footer{
       font-size: 16px;
       margin-right: 20px;
   }
-  .contact-left, .contact-right{
-      flex-basis: 100%;
-  }
-  .copyright{
-      font-size: 14px;
-  }
-}
-#msg{
-  color: #61b752;
-  margin-top: -40px;
-  display: block;
 }
