@@ -1,0 +1,278 @@
+/*couleur a utiliser
+1) #000407 (black)
+2) #79031d (red)
+3) #edb518 (yellow)
+4) #f5f7f7 (white)
+*/
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  background-color: #000407;
+  
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+
+
+/* scrollbar */
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+background-color: #e5e5e5;
+}
+body::-webkit-scrollbar-thumb {
+border-radius: 15px;
+background-color: #79031d;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #edb518;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #000407;
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar brand */
+  .brand img {
+      height: 50px;
+      width: 130px;
+      padding-left: 10px;
+  }
+  
+  
+  /* Navbar links */
+  .links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links a {
+    font-size: 18px;
+    color: #f5f7f7;
+    text-decoration: none;
+    padding: 20px;
+  }
+  
+  /* Active link */
+  .active {
+    background-color: #79031d;
+  }
+
+
+  nav ul li{
+    list-style: none;
+    
+  }
+  
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #79031d;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+  
+
+  .toggle {
+    color: #f5f7f7;
+    display: none;
+  }
+  .ouvrir{
+    color: #f5f7f7
+  }
+  .fermer{
+    color: #f5f7f7
+  }
+
+
+
+  /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.cc {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 7;
+}
+.cc.show {
+  right: 0px;
+}
+.cc header {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+header i {
+  color: #79031d;
+  font-size: 32px;
+}
+header .text2 {
+  color: #79031d;
+  font-weight: 500;
+}
+.cc .data {
+  margin-top: 16px;
+}
+.cc .data p {
+  color: #000407;
+  font-size: 16px;
+}
+.data p a {
+  color: #79031d;
+  text-decoration: none;
+}
+.data p a:hover {
+  text-decoration: underline;
+}
+.cc .buttonsc {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonsc .buttonc {
+  border: none;
+  color: #f5f7f7;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: #79031d;
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
+.buttons #acceptBtn:hover {
+  background-color: #79031d;
+}
+#declineBtn {
+  border: 2px solid #79031d;
+  background-color: #f5f7f7;
+  color: #79031d;
+}
+#declineBtn:hover {
+  background-color: #79031d;
+  color: #f5f7f7;
+}
+
+  @media all and (max-width: 991px) {
+    .toggle {
+      display: block;
+      font-size: 2rem;
+      cursor: pointer;
+      position: relative;
+      z-index: 20;
+      margin-right: 3%;
+    }
+    .brand {
+      position: relative;
+      z-index: 20;
+    }
+
+
+    div .ouvrir {
+      display: block;
+    }
+
+    div .fermer {
+      display: none;
+    }
+    .open .ouvrir {
+      display: none;
+    }
+
+    .open .fermer {
+     display: block;
+    }
+    .links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40;
+      height: 100vh;
+      background:#000407;
+      flex-direction: column;
+      padding: 2rem;
+      justify-content: space-around;
+      transform: translateX(-100%);
+      transition: transform 1.2s;
+  }
+  
+  .active {
+    background-color: #79031d;
+    border-radius: 25px;
+  }
+  .links li a {
+      font-size: 2rem;
+  }
+
+  .btn {
+      font-size: 2rem;
+  }
+
+  .open .links {
+      transform: translateX(0);
+  }
+}
+  
