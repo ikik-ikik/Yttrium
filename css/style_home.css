@@ -39,7 +39,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  
+  overflow-x: hidden;
   color: #f5f7f7;
 }
 
@@ -100,12 +100,6 @@ body{
   border-radius: 15px;
   margin-left: -25px;
   transition: filter 0.3s ease-in-out;
-  
-}
-
-.about-col-1 img:hover{
-  filter: drop-shadow(0 0 20px rgba(237, 181, 24, 0.5));
-  transition: filter 0.5s ease;
   
 }
 
@@ -225,15 +219,7 @@ body{
   transition: text-shadow 0.5s ease-in-out;
 }
 
-.menbre:hover{
-  text-shadow: red -3px 0,
-               cyan 3px 0;
-}
 
-.sub-title:hover{
-  text-shadow: red -3px 0,
-               cyan 3px 0;
-}
 
 footer{
   flex-shrink: 0;
@@ -323,6 +309,24 @@ footer{
   box-shadow: 0 0 20px rgba(237, 181, 24, 0.5);
 }
 
+@media only screen and (min-width: 700px){
+
+  .menbre:hover{
+    text-shadow: red -3px 0,
+                 cyan 3px 0;
+  }
+  
+  .sub-title:hover{
+    text-shadow: red -3px 0,
+                 cyan 3px 0;
+  }
+  .about-col-1 img:hover{
+    filter: drop-shadow(0 0 20px rgba(237, 181, 24, 0.5));
+    transition: filter 0.5s ease;
+    
+  }
+}
+
 
 
 @media only screen and (max-width: 600px){
@@ -356,6 +360,7 @@ footer{
   .about-col-2{
     max-width: 600rem; /* ajustez cette valeur selon vos besoins */
     margin: 0 auto; /* centrer le paragraphe horizontalement */
+    margin-left: 0 auto;
   }
 
   .about-col-1{
@@ -372,4 +377,51 @@ footer{
       font-size: 16px;
       margin-right: 20px;
   }
+}
+
+@media only screen and (max-width: 431px){
+  .about-col-2{
+    max-width: 600rem; /* ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* centrer le paragraphe horizontalement */
+    margin-left: -15px;
+  }
+
+}
+
+@media only screen and (max-width: 401px){
+  .about-col-2{
+    max-width: 600rem; /* ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* centrer le paragraphe horizontalement */
+    margin-left: -20px;
+  }
+
+}
+
+@media only screen and (max-width: 393px){
+  .about-col-2{
+    max-width: 600rem; /* ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* centrer le paragraphe horizontalement */
+    margin-left: -28px;
+  }
+
+}
+
+@media only screen and (max-width: 358px){
+  .about-col-2{
+    font-size: 13px;
+    
+}
+.sub-title{
+    font-size: 35px;
+}
+.tab-contents{
+  font-size: 10px;
+}
+.tab-contents ul li span{
+  font-size: 11px;
+}
+.about{
+  overflow: auto;
+}
+
 }
