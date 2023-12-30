@@ -333,7 +333,7 @@ footer{
 @media only screen and (max-width: 826px){
   body {
     height: 100vh;
-    background: url(../Picture/back_o_s_i.jpg);
+    background: url(../Picture/back_y_po.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -341,7 +341,7 @@ footer{
   }
   .backlogo{
     height: 60vh;
-    background-image: url(../Picture/back_o_s_i.jpg);
+    background-image: url(../Picture/back_y_po.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -352,7 +352,7 @@ footer{
 @media only screen and (max-width: 600px){
   body {
     height: 100vh;
-    background: url(../Picture/backound_home_s.png);
+    background: url(../Picture/back_y_po.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -360,7 +360,7 @@ footer{
   }
   .backlogo{
     height: 60vh;
-    background-image: url(../Picture/backound_home_s.png);
+    background-image: url(../Picture/back_y_po.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
